@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afeto no Forno</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpg" alt="Logo Afeto no Forno" class="logo-img">
+    </div>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a href="#contato" class="btn">Pedir no WhatsApp</a>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-texto">
+      <h1>Pão quentinho feito com amor no seu bairro</h1>
+      <p>Pães de fermentação natural, bolos caseiros e doces artesanais fresquinhos todos os dias.</p>
+      <a href="#produtos" class="btn">Ver Cardápio</a>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500" alt="Pão Artesanal">
+    </div>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Nossas Especialidades</h2>
+    <div class="grid-produtos">
+      
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=300" alt="Pão Rustico">
+        <h3>Pão de Fermentação Natural</h3>
+        <p>Massa leve de miolo alveolado e casca crocante.</p>
+        <span>R$ 25,00</span>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300" alt="Bolo Caseiro">
+        <h3>Bolo Caseiro</h3>
+        <p>Receita tradicional de vó, feito diariamente.</p>
+        <span>R$ 28,00</span>
+      </div>
+
+      <div class="card">
+        <img src=" https://minhasreceitinhas.com.br/receita/bolo-no-pote-pra-vender/"alt="Bolo de pote">
+        <h3>Bolo de Pote</h3>
+        <p>Diversos sabores.</p>
+        <span>R$ 12,00</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Faça sua Encomenda</h2>
+    <form>
+      <input type="text" placeholder="Seu Nome" required>
+      <input type="tel" placeholder="Seu Telefone / WhatsApp" required>
+      <textarea placeholder="O que deseja encomendar?" rows="4" required></textarea>
+      <button type="submit" class="btn">Enviar Encomenda</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Afeto no Forno - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- Banner de Cookies -->
+  <div id="banner-cookies" class="banner-cookies">
+    <p>
+      Utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com a nossa política.
+    </p>
+    <button id="btn-aceitar-cookies" class="btn-cookies">Entendi e Aceito</button>
+  </div>
+
+  <!-- JavaScript para controle dos cookies -->
+  <script>
+    const banner = document.getElementById('banner-cookies');
+    const btnAceitar = document.getElementById('btn-aceitar-cookies');
+
+    // Verifica se o usuário já aceitou os cookies anteriormente
+    if (localStorage.getItem('cookiesAceito') === 'true') {
+      banner.classList.add('oculto');
+    }
+
+    // Ação ao clicar no botão de aceite
+    btnAceitar.addEventListener('click', () => {
+      localStorage.setItem('cookiesAceito', 'true');
+      banner.classList.add('oculto');
+    });
+  </script>
+</body>
+</html>

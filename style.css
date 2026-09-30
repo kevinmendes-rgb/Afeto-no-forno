@@ -1,0 +1,207 @@
+/* Configurações básicas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fff8f5;
+  color: #333333;
+}
+
+/* Botões */
+.btn {
+  background-color: #e65c40;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #d04b31;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ebdcd5;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  color: #e65c40;
+}
+
+/* Hero / Banner */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-texto h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.hero-texto p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+/* Produtos */
+.produtos {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.produtos h2 {
+  margin-bottom: 30px;
+}
+
+.grid-produtos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ebdcd5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card span {
+  font-weight: bold;
+  color: #e65c40;
+}
+
+/* Contato */
+.contato {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ebdcd5;
+  text-align: center;
+}
+
+.contato h2 {
+  margin-bottom: 20px;
+}
+
+.contato form input,
+.contato form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+/* Banner de Cookies */
+.banner-cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(26, 32, 44, 0.95);
+  color: #ffffff; /* Cor alterada para branco para legibilidade */
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  font-size: 14px;
+}
+
+.btn-cookies {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cookies:hover {
+  background-color: #218838;
+}
+
+.oculto {
+  display: none !important;
+}
